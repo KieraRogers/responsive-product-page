@@ -1,5 +1,28 @@
 :root {
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+}
 
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  font-size: var(--font-size-base);
 }
 
 * {
@@ -14,7 +37,7 @@
 
 html {
   font-family:'Poppins', sans-serif;
-  background-color: #fff;
+  background-color: #eae9e9;
   color: #222;
   scroll-behavior: smooth;
   line-height: 1.4;
@@ -36,6 +59,7 @@ img {
 
 header {
   padding: 0 10px;
+  background-color: #fff;
 }
 
 header div img {
@@ -56,7 +80,6 @@ nav ul {
 nav ul li {
   padding-left: 1em;
   text-transform: uppercase;
-
 }
 
 nav ul li a:link,
@@ -65,9 +88,6 @@ nav ul li a:visited {
     text-decoration: none;
 }
 
-main {
-  padding: 0 10px;
-}
 
 #product-image {
   display: grid;
@@ -85,24 +105,73 @@ main {
   grid-column: span 3;
 }
 
-/* #bite-me p {
+#valentine {
+  background-color: #fff;
+  padding: 1em;
+}
+
+#bite-me h1 {
+  margin-bottom: 0;
+}
+
+#limited {
   margin: 0;
-} */
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+#red {
+  margin: 0;
+}
+
+.btn {
+  padding: .5em 1em;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+}
+
+#dough {
+  background-color: #fff;
+  padding: 1em;
+}
+
+h2 {
+  text-align: center;
+}
 
 #quote {
   background-color: black;
-  padding: 1em 0;
+  padding: 1em;
   color: white;
+}
+
+#try {
+  background-color: #fff;
+  padding: 1em;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
+  
 }
 
 .product-grid article {
-  background-color: rgb(241, 237, 237);
+  background-color: rgb(245, 244, 244);
+  text-align: center;
+  border-radius: 10px;
 }
 
+article img {
+  border-radius: 10px 10px 0 0;
+}
 
+footer{
+  background-color: #fff;
+  padding: 1em;
+  text-align: center;
+}
