@@ -37,7 +37,7 @@ p {
 
 html {
   font-family:'Poppins', sans-serif;
-  background-color: #eae9e9;
+  background-color: #fcfcfc;
   color: #222;
   scroll-behavior: smooth;
   line-height: 1.4;
@@ -60,6 +60,7 @@ img {
 header {
   padding: 0 10px;
   background-color: #fff;
+  margin-bottom: .25em;
 }
 
 header div img {
@@ -107,7 +108,8 @@ nav ul li a:visited {
 
 #valentine {
   background-color: #fff;
-  padding: 1em;
+  padding: 2em 1em;
+  margin-bottom: .25em;
 }
 
 #bite-me h1 {
@@ -136,6 +138,7 @@ nav ul li a:visited {
 #dough {
   background-color: #fff;
   padding: 1em;
+  padding-bottom: 2em;
 }
 
 h2 {
@@ -151,6 +154,8 @@ h2 {
 #try {
   background-color: #fff;
   padding: 1em;
+  padding-bottom: 2em;
+  margin-bottom: .25em;
 }
 
 .product-grid {
@@ -174,6 +179,10 @@ footer{
   background-color: #fff;
   padding: 1em;
   text-align: center;
+}
+
+footer p {
+  font-size: var(--font-size-sm);
 }
 
 
